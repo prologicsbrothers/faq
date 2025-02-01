@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Pro Wallet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2px;
+            padding: 2px;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            outline: none;
+            text-align: left;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .faq-question:hover {
+            background-color: #ddd;
+        }
+        .faq-answer {
+            display: none;
+            padding: 10px;
+            background-color: #fff;
+            color: #555;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Frequently Asked Questions (FAQ)</h1>
+
+    <div class="faq-item">
+        <button class="faq-question">1. What is Pro Wallet?</button>
+        <div class="faq-answer">
+            <p>Pro Wallet is a gaming and rewards app where users can earn rewards by playing games and completing tasks. These rewards can be redeemed as mobile recharges, UPI cash, or redeem codes.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">2. How does Pro Wallet work?</button>
+        <div class="faq-answer">
+            <p>Users need to complete tasks and play games to earn rewards. These rewards can then be converted into mobile recharges, UPI cash, or gift cards.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">3. Is Pro Wallet free to use?</button>
+        <div class="faq-answer">
+            <p>Yes, Pro Wallet is completely free to use. However, some advanced features may be introduced in the future as paid options.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">4. What is the minimum age requirement?</button>
+        <div class="faq-answer">
+            <p>Users must be at least 18 years old to use Pro Wallet.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">5. How do I create an account?</button>
+        <div class="faq-answer">
+            <p>You can sign up using your name, mobile number, and email ID. The app uses Firebase for secure authentication.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">6. Can I use multiple accounts?</button>
+        <div class="faq-answer">
+            <p>No, multiple accounts are not allowed. If we detect fraudulent activities, your account may be suspended.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">7. How can I reset my password?</button>
+        <div class="faq-answer">
+            <p>You can reset your password through the **"Forgot Password"** option on the login screen.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">8. How do I delete my account?</button>
+        <div class="faq-answer">
+            <p>If you wish to delete your account, please contact our support team at <a href="mailto:support@example.com">support@example.com</a>.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">9. How can I earn rewards?</button>
+        <div class="faq-answer">
+            <p>You can earn rewards by playing games, completing daily tasks, and participating in special events within the app.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">10. What types of rewards can I redeem?</button>
+        <div class="faq-answer">
+            <p>Rewards can be redeemed for **UPI cash, mobile recharges, and gift codes**.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">11. How long does it take to receive my reward?</button>
+        <div class="faq-answer">
+            <p>Rewards are usually processed within 24-48 hours.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">12. How does the referral system work?</button>
+        <div class="faq-answer">
+            <p>You can invite friends using your referral code. Once they sign up and complete a required task, you will receive a referral bonus.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">13. Why am I seeing ads?</button>
+        <div class="faq-answer">
+            <p>We use ads to keep Pro Wallet free for all users. The app is monetized through **Google AdMob and other ad networks**.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">14. My reward is not credited, what should I do?</button>
+        <div class="faq-answer">
+            <p>If your reward has not been credited within 48 hours, please contact our support team at <a href="mailto:help.prowallet@gmail.com">help.prowallet@gmail.com</a>.</p>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    // JavaScript for FAQ toggle
+    const faqButtons = document.querySelectorAll('.faq-question');
+    faqButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const answer = button.nextElementSibling;
+            answer.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>
